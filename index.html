@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Support for ArchCam: Photo Geometry by Alpine Dog Apps LLC.">
+    <meta name="description" content="Support for ArchCam, an iPhone camera that corrects building perspective, levels horizons, reduces wide-photo edge stretching, and straightens flat subjects.">
     <title>ArchCam Support | Alpine Dog Apps</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,32 +25,90 @@
         <section class="intro">
             <img src="assets/app-icon.png" alt="ArchCam app icon">
             <div>
-                <p class="eyebrow">Alpine Dog Apps LLC</p>
-                <h1>ArchCam Support</h1>
-                <p class="lede">Help with straighter lines, balanced framing, wide-angle photos, and top-down capture.</p>
+                <p class="eyebrow">ArchCam Support</p>
+                <h1>Keep buildings upright. Keep people looking natural.</h1>
+                <p class="lede">Choose only the correction your subject needs. ArchCam applies it automatically and processes everything privately on your iPhone.</p>
             </div>
         </section>
 
-        <section class="section" aria-labelledby="getting-started">
-            <h2 id="getting-started">Getting started</h2>
-            <div class="grid">
-                <article class="card">
-                    <h2>Allow access</h2>
-                    <p>ArchCam needs Camera access to compose photos and add-only Photos access to save them. Motion access drives leveling and line correction. Location is optional and is used only for photo metadata.</p>
+        <section class="section" aria-labelledby="choose-correction">
+            <h2 id="choose-correction">Choose the correction for your subject</h2>
+            <p class="section-intro">Each correction solves a different problem. Leaving every correction on can make the photo less natural.</p>
+            <dl class="subject-guide">
+                <div>
+                    <dt>Building or room</dt>
+                    <dd><strong>Verticals + Level.</strong> Use Verticals when pointing up or down while facing the subject approximately head-on.</dd>
+                </div>
+                <div>
+                    <dt>Group photo or selfie</dt>
+                    <dd><strong>Wide + Level.</strong> Use Wide when faces or figures near the edges look stretched. It is useful with any camera or zoom where edge stretching is visible.</dd>
+                </div>
+                <div>
+                    <dt>Everyday scene</dt>
+                    <dd><strong>Level.</strong> It keeps the horizon horizontal without changing perspective.</dd>
+                </div>
+                <div>
+                    <dt>Document or flat surface</dt>
+                    <dd><strong>Top-Down.</strong> Use it with the rear camera for documents, plans, drawings, rugs, tabletops, and floor patterns photographed from above.</dd>
+                </div>
+                <div>
+                    <dt>Deliberately tilted photo</dt>
+                    <dd><strong>Turn Level off.</strong> ArchCam will preserve the angle you chose.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="section" aria-labelledby="how-corrections-work">
+            <h2 id="how-corrections-work">How the corrections work</h2>
+            <div class="feature-list">
+                <article>
+                    <h3>Verticals corrects building perspective</h3>
+                    <p>ArchCam uses camera direction and lens information to calculate a shift-style correction automatically. It corrects converging upright lines caused by pointing the camera up or down. It does not correct side-to-side perspective from photographing a wall at an angle.</p>
                 </article>
-                <article class="card">
-                    <h2>Choose adjustments</h2>
-                    <p><strong>Verticals</strong> straightens upright lines. <strong>Wide</strong> reduces edge stretching. <strong>Preview</strong> shows adjustments live; when it is off, the white outline shows the adjusted frame.</p>
+                <article>
+                    <h3>Wide reduces edge stretching</h3>
+                    <p>Wide photos can stretch faces, figures, circles, and other familiar shapes near the frame edges. Wide uses a deliberately curved projection to preserve their proportions more naturally. Because it may curve straight lines, it is better suited to people and organic shapes than architecture.</p>
                 </article>
-                <article class="card">
-                    <h2>Save your photo</h2>
-                    <p>ArchCam always saves the adjusted photo. In Settings, you can keep a second uncorrected copy and choose HEIF or JPEG output.</p>
+                <article>
+                    <h3>Level keeps the horizon horizontal</h3>
+                    <p>Level automatically corrects camera roll. It is useful for most everyday photos unless you want a deliberately angled composition.</p>
                 </article>
-                <article class="card">
-                    <h2>Use the shutter</h2>
-                    <p>Tap the shutter button or press either iPhone volume button. ArchCam enables the next capture as soon as the camera is ready.</p>
+                <article>
+                    <h3>Top-Down corrects flat subjects</h3>
+                    <p>Top-Down straightens rectangular and patterned surfaces photographed from above with the rear camera.</p>
                 </article>
             </div>
+        </section>
+
+        <section class="section" aria-labelledby="compose">
+            <h2 id="compose">Preview or Outline mode</h2>
+            <dl class="mode-list">
+                <div>
+                    <dt>Preview</dt>
+                    <dd>Shows enabled corrections live while you compose. It processes every camera frame, so it typically uses more battery and may create more heat.</dd>
+                </div>
+                <div>
+                    <dt>Outline</dt>
+                    <dd>Uses the native camera view and marks the future adjusted frame with a white boundary. It uses less processing.</dd>
+                </div>
+            </dl>
+            <p>Both modes apply the same enabled corrections to the saved photo.</p>
+        </section>
+
+        <section class="section" aria-labelledby="capture">
+            <h2 id="capture">Capture and saving</h2>
+            <p>Choose front or rear cameras, pinch to zoom, and optionally adjust exposure and white balance. Tap the shutter or press either iPhone volume button.</p>
+            <p>ArchCam always saves the adjusted photo. In Settings, you can keep a second uncorrected copy and choose HEIF or JPEG output.</p>
+        </section>
+
+        <section class="section" aria-labelledby="permissions">
+            <h2 id="permissions">Permissions</h2>
+            <ul>
+                <li><strong>Camera:</strong> required to compose and capture photos.</li>
+                <li><strong>Photos:</strong> add-only access saves the photos you take.</li>
+                <li><strong>Motion:</strong> supplies device direction for automatic corrections.</li>
+                <li><strong>Location:</strong> optional and used only to add location to saved photo metadata.</li>
+            </ul>
         </section>
 
         <section class="section" aria-labelledby="troubleshooting">
@@ -58,8 +116,9 @@
             <ul>
                 <li><strong>No camera image:</strong> open iPhone Settings, select ArchCam, and enable Camera access.</li>
                 <li><strong>Photos are not saving:</strong> confirm Photos access is enabled for ArchCam in iPhone Settings.</li>
-                <li><strong>The adjusted frame is smaller:</strong> perspective correction needs room around the subject. Step back or select a wider camera when available.</li>
-                <li><strong>Live preview feels slow:</strong> turn Preview off. ArchCam will show the future adjusted-frame outline while retaining the native camera preview.</li>
+                <li><strong>The adjusted frame is smaller:</strong> automatic shift and perspective correction need room around the subject. Step back or select a wider camera when available.</li>
+                <li><strong>Straight lines curve with Wide:</strong> this is expected. Wide trades straight lines for less stretching of faces and shapes near the frame edges.</li>
+                <li><strong>Live Preview feels slow:</strong> turn Preview off. Outline mode will show the future adjusted-frame boundary while retaining the native camera preview and using less processing.</li>
             </ul>
         </section>
 

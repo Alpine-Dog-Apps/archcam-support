@@ -106,7 +106,8 @@ main {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     line-height: 1.15;
 }
 
@@ -118,6 +119,11 @@ h1 {
 h2 {
     margin: 0 0 14px;
     font-size: 1.35rem;
+}
+
+h3 {
+    margin: 0 0 8px;
+    font-size: 1.08rem;
 }
 
 p {
@@ -142,6 +148,55 @@ p {
 .section {
     padding-block: 30px;
     border-top: 1px solid var(--line);
+}
+
+.section-intro {
+    max-width: 680px;
+    color: var(--muted);
+}
+
+.subject-guide,
+.mode-list {
+    margin: 22px 0 0;
+}
+
+.subject-guide > div,
+.mode-list > div {
+    display: grid;
+    grid-template-columns: minmax(170px, 0.8fr) minmax(0, 2fr);
+    gap: 24px;
+    padding-block: 18px;
+    border-top: 1px solid var(--line);
+}
+
+.subject-guide > div:last-child,
+.mode-list > div:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.subject-guide dt,
+.mode-list dt {
+    font-weight: 750;
+}
+
+.subject-guide dd,
+.mode-list dd {
+    margin: 0;
+    color: var(--muted);
+}
+
+.feature-list article {
+    padding-block: 18px;
+    border-top: 1px solid var(--line);
+}
+
+.feature-list article:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.feature-list p {
+    max-width: 760px;
+    color: var(--muted);
 }
 
 .grid {
@@ -246,6 +301,12 @@ footer {
 
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .subject-guide > div,
+    .mode-list > div {
+        grid-template-columns: 1fr;
+        gap: 6px;
     }
 
     .footer-links {
